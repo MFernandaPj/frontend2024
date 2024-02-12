@@ -13,9 +13,7 @@ const links =[
   name:'YouTube',
   url:'https://www.youtube.com'
 }
-
 ]
-
 
 function App() {
  
