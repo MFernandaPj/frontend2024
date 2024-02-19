@@ -1,4 +1,8 @@
 import './App.css'
+const numberButtonsClasses= 'btn btn-info w-100'
+const operatorButtonsClasses= 'btn btn-warning w-100'
+const equalButtonsClasses= 'btn btn-danger w-100'
+
 function App() {
 
   return (
@@ -8,79 +12,151 @@ function App() {
 <table className='center'>
   <tbody>
     <tr>
-      <td colSpan={4}>
-        11
-       </td>
-  
-    </tr>
-    <tr>
-      <td>
-        21
-       </td>
-       <td>
-        22
-       </td>
-       <td>
-        23
-       </td>
-       <td>
-        24
+      <td className='text-end' colSpan={4}>
+        <h1>0</h1>
        </td>
     </tr>
     <tr>
-      <td>
-        31
+    <td className='text-end' colSpan={1}>
+        <button
+        className={operatorButtonsClasses}
+        type='button'>
+            C
+          </button>
        </td>
-       <td>
-        32
+       <td className='text-end' colSpan={1}>
+        <button
+        className={operatorButtonsClasses}
+        type='button'>
+            {'<<'}
+          </button>
        </td>
-       <td>
-        33
+       <td className='text-end' colSpan={1}>
+        <button
+        className={operatorButtonsClasses}
+        type='button'>
+            %
+          </button>
        </td>
-       <td>
-        34
-       </td>
-    </tr>
-    <tr>
-      <td>
-        41
-       </td>
-       <td>
-        42
-       </td>
-       <td>
-        43
-       </td>
-       <td>
-        44
-       </td>
-    </tr>
-    <tr>
-      <td>
-        51
-       </td>
-       <td>
-        52
-       </td>
-       <td>
-        53
-       </td>
-       <td>
-        54
+       <td className='text-end' colSpan={1}>
+        <button
+        className={operatorButtonsClasses}
+        type='button'>
+            /
+          </button>
        </td>
     </tr>
     <tr>
-      <td>
-        61
+    <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           7
+        </button>
        </td>
-       <td>
-        62
+       <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           8
+        </button>
        </td>
-       <td>
-        63
+       <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           9
+        </button>
        </td>
-       <td>
-        64
+       <td className='text-end' colSpan={1}>
+        <button
+        className={operatorButtonsClasses}
+        type='button'>
+            *
+          </button>
+       </td>
+    </tr>
+    <tr>
+    <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           4
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           5
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           6
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+        className={operatorButtonsClasses}
+        type='button'>
+            -
+          </button>
+       </td>
+    </tr>
+    <tr>
+    <td className='text-end' colSpan={1}>
+        <button
+       className={numberButtonsClasses}
+        type='button'>
+           1
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+          className={numberButtonsClasses}
+        type='button'>
+           2
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           3
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+        className={operatorButtonsClasses}
+        type='button'>
+            +
+          </button>
+       </td>
+    </tr>
+    <tr>
+      <td className='text-center' colSpan={2}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           0
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+        className={numberButtonsClasses}
+        type='button'>
+           .
+        </button>
+       </td>
+       <td className='text-end' colSpan={1}>
+        <button
+        className={equalButtonsClasses}
+        type='button'>
+            =
+          </button>
        </td>
     </tr>
 
