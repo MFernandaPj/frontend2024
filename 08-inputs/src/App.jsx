@@ -1,34 +1,42 @@
-import {useState} from "react"
+import { useForm } from "./Hooks/UseForm"
 
 function App() {
-  const [username, setUsername] = useState("")
-  const handleUsernameChange = (event) => {
-    setUsername(event.target.value)
-  }
-  const handleSubmit = (e) => {
+  const [InputsForm,HandleInputChange,FormReset] = useForm({
+    username:"",
+    password:"",
+  })
+
+  const HandleSubmit= (e) => {
     e.preventDefault()
-    console.log("Mi nombre de usuario es ", username)
-    setUsername("")
+    console.log("Hola, mi nombre de usuario es:", InputsForm.username)
+    console.log("Mi contraseña es:", InputsForm.password)
+    FormReset()
   }
 
   return (
     <div>
-      <h1>Inputs</h1>
+      <h1>Input</h1>
       <hr />
-      <form onSubmit={(e) => handleSubmit(e)}>
+      <form onSubmit={(e)=>HandleSubmit(e)}>
         <div>
-          <label htmlFor="username">Username</label>
-          <input
-            id="username"
-            type="text"
-            value={username}
-            onChange={() => handleUsernameChange(event)
-            }
-          />
+        <label htmlFor="username">Username</label>
+        <input 
+        id="username"
+        name="username"
+        type="text"
+        value={InputsForm.username}
+        onChange={(event)=>HandleInputChange(event)}
+        />
         </div>
         <div>
-          <label htmlFor="passwrod">Password </label>
-          <input id="username" type="password"/>
+        <label htmlFor="password">Password</label>
+        <input
+        id="password"
+        name="password"
+        type="password" 
+        value={InputsForm.password}
+        onChange={(event)=>HandleInputChange(event)}
+        />
         </div>
         <div>
           <button type="submit">Submit</button>
