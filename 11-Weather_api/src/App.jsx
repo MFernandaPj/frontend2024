@@ -1,15 +1,31 @@
-import { getWeather } from "./api/WeatherApi"
+import  CityCard from "./components/CityCard"
+import './assets/css/index.css'
+import SearchCity from "./components/SearchCity"
+import { useState } from "react"
 
-function App() {
-getWeather()
-return(
+const App =()=>{
 
-  <>
-  <div>Weather Api</div>
-  </>
-)  
+  const [cities, setCities] = useState (["Tuxtepec"])
+
+  return (
+    <>
+    <div className="container">
+      <h1>Weather App</h1>
+      <hr/>
+      <SearchCity cities={cities} setCities={setCities} />
+      <hr />
+
+      <div className="row">
+      {
+        cities.map((city,index) => (
+          <CityCard key={index} city={city}/>
+        ))
+      }
+      </div>
   
-  
+       </div>
+    </>
+  )
 }
 
 export default App
