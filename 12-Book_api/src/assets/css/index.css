@@ -1,0 +1,36 @@
+body {
+  background-color: #9dc1d431; /* Color de fondo claro */
+}
+
+.card {
+    border: none;
+  }
+
+  .card-body {
+    padding: 0.5rem;
+  }
+
+  .custom-primary-button {
+    background-color: #191D88 !important; 
+    border-color: #191D88 !important; 
+    color: white !important; 
+  }
+  
+  .custom-primary-button:hover {
+    background-color: #416ca7 !important; 
+    border-color: #416ca7 !important; 
+  }
+  
+  .custom-secondary-button {
+    background-color: #337CCF !important; 
+    border-color: #337CCF !important; 
+    color: white !important;
+  }
+  
+  .custom-secondary-button:hover {
+    background-color: #789fcc !important; 
+    border-color: #789fcc !important; 
+  }
+  
+
+  
